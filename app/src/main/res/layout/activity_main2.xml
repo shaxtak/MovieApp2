@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Movie"
+            android:textColor="@color/white" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="20sp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_marginTop="10dp"
+        android:hint="Movie name"
+        android:gravity="start"
+        android:background="#AAA4A4"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"/>
+
+        <EditText
+            android:id="@+id/edt_authors"
+            android:layout_marginTop="30dp"
+            android:hint="Movie authors"
+            android:background="#AAA4A4"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"/>
+        <EditText
+            android:id="@+id/edt_about"
+            android:gravity="start"
+            android:layout_marginTop="30dp"
+            android:background="#AAA4A4"
+            android:hint="About Movie"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <EditText
+            android:id="@+id/edt_date"
+            android:background="#AAA4A4"
+            android:layout_marginTop="30dp"
+            android:hint="Movie date"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom || end"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="100sp"
+            android:text="Save"
+            android:backgroundTint="#03A9F4"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
